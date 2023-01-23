@@ -18,9 +18,7 @@ public class MenuItem {
         this.dateAdded = new Date();
     }
 
-    public void setName(String name;) {
-        this.name = name;
-    }
+    public void setName(String name) { this.name = name;}
 
     public void setPrice(double price) {
         this.price = price;
