@@ -18,6 +18,26 @@ public class MenuItem {
         this.dateAdded = new Date();
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public Date getDateAdded() {
+        return dateAdded;
+    }
+
     public void setName(String name) { this.name = name;}
 
     public void setPrice(double price) {
@@ -31,4 +51,16 @@ public class MenuItem {
     public void setCategory(String category) {
         this.category = category;
     }
+
+
+    @Override
+    public String toString() {
+        return name + '\n' +
+                description + '\n' +
+                category.toUpperCase() + " | $" + price;
+    }
+
+
+
+
 }
